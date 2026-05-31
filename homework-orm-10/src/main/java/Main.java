@@ -51,6 +51,7 @@ public class Main {
             RegistrationForm form2 = new RegistrationForm("ab", "pass", 17);  // НЕВАЛИДНАЯ
             RegistrationForm form3 = new RegistrationForm("user3", "password123", 30);
 
+
             try {
                 em.saveAll(List.of(form1, form2, form3));
                 System.out.println("Все формы сохранились (не должно было произойти)");
